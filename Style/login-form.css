@@ -11,8 +11,9 @@
     font-size: 16px;
 
     --background-color: #191A19; 
+    --shadow-color: #000000;
     --green-color: #44CC44;
-    --green-light-color: #CEDEBD;
+    --green-light-color: #CBFFA9;
     --yellow-color: #FFCA03;
     --white-color: #FFFFFF;
     --color-gray: #B2B2B2;
@@ -20,17 +21,21 @@
 
 body{
     text-align: center;
+    margin: 0 auto;
+
+    position: static;
 }
 
 .main{
     background-color: var(--background-color);
     
-    width: 304px;
+    width: 300px;
     margin: 32px auto 0;
     padding: 16px 0;
     border: none;
     border-radius: 10px;
 }
+
 
 .main img{
     width: 150px;
@@ -39,35 +44,34 @@ body{
 
 #login-form{
     margin: 0 auto;
-    padding: 1rem;
     width: 300px;
-
-    text-align: center;
+    padding: 0 32px;
 }
 
-#login-form fieldset{
-    padding: 1rem;
-}
+#login-form #data{
+    padding: 0.5rem 0;
+    width: 234px;
 
-#login-form label{
     display: flex;
-    flex-direction: row;
-
-    padding: 0.75rem 0;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#login-form input{
+#login-form #data label{
+    padding: 1rem 0;
+}
+
+#login-form #data input{
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
+
+    width: 234px;
 
     padding: 0.8rem;
     border: none;
     border-radius: 10px;
     outline: none;
-    width: 90%;
 }
 
 ::-webkit-input-placeholder{ 
@@ -78,28 +82,37 @@ body{
     color: var(--color-gray); 
 }
 
-#login-form input[type="checkbox"]{
-    color: var(--color-green-light);
+#login-form #remember-checkbox{
+    color: var(--green-light-color);
     font-size: 12px;
 
     display: flex;
+    flex-direction: row;
     justify-content: left;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
+}
+
+#login-form input[type="checkbox"]{
+    border: none;
+    width: 15px;
+    height: 15px;
 }
 
 #login-form button{
     font-family: 'Poppins', sans-serif;
+    color: var(--white-color);
     font-size: 1rem;
     font-weight: 600;
 
     padding: 0.8rem 2rem;
-
-    background-color: var(--green-color);
-    color: var(--white-color);
-    opacity: 1;
+    margin: 16px 0;
     border: none;
     border-radius: 10px;
+
+    background-color: var(--green-color);
+    
+    opacity: 1; 
 }
 
 #login-form button:hover{
