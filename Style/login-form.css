@@ -84,13 +84,15 @@ body{
 }
 
 #login-form button{
-    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    padding: 0.8rem 2rem;
 
     background-color: var(--green-color);
     color: var(--white-color);
     opacity: 1;
-    font-size: 1rem;
-    font-weight: 600;
     border: none;
     border-radius: 10px;
 }
