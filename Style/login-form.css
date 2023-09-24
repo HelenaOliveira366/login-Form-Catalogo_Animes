@@ -11,19 +11,28 @@
     font-size: 16px;
 
     --background-color: #191A19; 
-    --shadow-color: #000000;
     --green-color: #44CC44;
     --green-light-color: #CBFFA9;
     --yellow-color: #FFCA03;
     --white-color: #FFFFFF;
     --color-gray: #B2B2B2;
+    --color-orange: #FF5403;
+    --color-red: #F90716;
+   
 }
 
 body{
     text-align: center;
     margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 
-    position: static;
+    background-image: linear-gradient(45deg, var(--yellow-color), var(--color-orange), var(--color-red));
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: var(--color-orange-gradient);
 }
 
 .main{
@@ -38,7 +47,7 @@ body{
 
 
 .main img{
-    width: 150px;
+    width: 170px;
     object-fit: contain;
 }
 
