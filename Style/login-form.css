@@ -48,7 +48,7 @@ body{
 
 .main img{
     width: 170px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 #login-form{
