@@ -24,8 +24,9 @@
 body{
     text-align: center;
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    overflow: hidden;
 
     background-image: linear-gradient(to top, var(--yellow-color) 0%, var(--color-orange) 50%, var(--color-red) 100%);
     background-repeat: no-repeat;
