@@ -19,14 +19,14 @@
         <img src="./Assets/personagem-anime.png" alt="Personagem anime" width="170">
         
         <div id="form">
-            <form action="" method="post" name="login-form" id="login-form" target="_blank">
+            <form method="post" name="login-form" id="login-form"><!--action=""-->
                 <!--CAMPOS DE ENTRADA DE CADASTRO-->
                 <div id="data">
                     <label for="username">
-                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email">
                     </label>
                     <label for="passwd">
-                        <input type="password" id="passwd" name="passwd" placeholder="Digite a senha" required>
+                        <input type="password" id="password" name="password" placeholder="Digite a senha">
                     </label>
                 </div>
                 
@@ -35,7 +35,11 @@
                     <label for="remember">Lembrar de mim</label>
                 </div>
 
-                <button type="submit" onclick="redirectLogin()">Entrar</button>
+                <!--O submit espera uma validação do próprio formulário e não irá redirecionar 
+                    para outro local ormalmente, para cancelar esse comportamento declara-se 
+                    "onclick="login(); return false">" no <button type="submit"</button>, 
+                    aprovando o redirecionamento - "login()" é a função de validação e redirecionamento-->
+                <button type="submit" onclick="login(); return false">Entrar</button>
             </form>
         </div>
                 
